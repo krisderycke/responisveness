@@ -1,14 +1,16 @@
 @media only screen and (max-width: 300px) {
    body {
         background-color:red;
+       
    }
-   #medium, #large {
-       display: none;
-   }
+
    #small {
        font-size: small;
    }
-       
+   #small,#medium,#large {
+    display: inline;
+   }
+
 }
 
 
@@ -16,23 +18,33 @@
     body { background-color: green;
     }
 
-    #small, #large {
-        display: none;
+    #small {
+        width: 66.66666666666667%;
+    }
+    
+    #large {
+        width: 100%;
     }
 
     #medium {
+        width:33.333333333%;
         font-size:medium;
     }
+
 }
 
 @media only screen and (min-width:769px) {
     body { background-color: blue;
+       
     }
-    #small, #medium {
-        display:none;
+    #small, #medium, #large{
+        display: inline-block;
+        width: 25%;
+        padding: 2px;
+       
     }
 
-    #large {
+   /* #large {
         font-size:large;
-    }
+    }*/
 }
